@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      #para1 {
+        text-align: center;
+        color: rgb(223, 157, 236);
+      }
+      .center {
+        text-align: center;
+        color: rgb(55, 47, 83);
+      }
+      .newspaper {
+        column-count: 3;
+      }
+      body {
+        background-color: rgba(255, 255, 255, 0.233);
+      }
+      h1 {
+        background-color: rgb(220, 221, 142);
+      }
+
+      div {
+        background-color: rgb(82, 108, 117);
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      div {
+        width: 100%;
+        height: 100px;
+        background-color: rgba(216, 112, 112, 0.658);
+        animation-name: example;
+        animation-duration: 4s;
+      }
+
+      @keyframes example {
+        from {
+          background-color: rgba(216, 112, 129, 0.568);
+        }
+        to {
+          background-color: aqua;
+        }
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      #para1 {
+        text-shadow: 2px 2px;
+      }
+      div.test {
+        white-space: nowrap;
+        width: 200px;
+        overflow: hidden;
+        border: 1px solid #000000;
+      }
+
+      div.test:hover {
+        overflow: visible;
+      }
+      .btn-group .button {
+        background-color: #04aa6d; /* Green */
+        border: 1px solid rgb(166, 216, 166);
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        float: left;
+      }
+
+      .btn-group .button:not(:last-child) {
+        border-right: none; /* Prevent double borders */
+      }
+
+      .btn-group .button:hover {
+        background-color: #4f3e8e;
+      }
+      .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #1b0355;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+
+      .button:hover {
+        background-color: #3e8e41;
+      }
+
+      .button:active {
+        background-color: #920f41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        transition: width 2s;
+      }
+
+      .box:hover {
+        width: 300px;
+      }
+
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: width 2s, height 4s;
+      }
+
+      .box2:hover {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello World!</p>
+    <p>Ці параграфи стилізовані за допомогою CSS.</p>
+    <p id="para1">Hello World!</p>
+    <p>Цей параграф не залежить від стилю.</p>
+    <h1 class="center">Червоний заголовок по центру</h1>
+    <p class="center">Червоний параграф по центру.</p>
+    <h1 style="background-color: DodgerBlue">Hello World</h1>
+
+    <p style="background-color: Tomato">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat.
+    </p>
+    <h1>Create Multiple Columns</h1>
+
+    <div class="newspaper">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+      iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+      illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+      odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+      dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+      eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+      possim assum.
+    </div>
+    <h1>CSS background-color example!</h1>
+    <div>
+      This is a text inside a div element.
+      <p>This paragraph has its own background color.</p>
+      We are still in the div element.
+    </div>
+    <h2>Responsive Table</h2>
+    <p>
+      A responsive table will display a horizontal scroll bar if the screen is
+      too small to display the full content. Resize the browser window to see
+      the effect:
+    </p>
+    <p>
+      To create a responsive table, add a container element (like div) with
+      <strong>overflow-x:auto</strong> around the table element:
+    </p>
+
+    <div style="overflow-x: auto">
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>Adam</td>
+          <td>Johnson</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+        </tr>
+      </table>
+      <h1>CSS Animation</h1>
+
+      <div></div>
+
+      <p>
+        <b>Note:</b> When an animation is finished, it goes back to its original
+        style.
+      </p>
+      <h2>Hoverable Dropdown</h2>
+      <p>Move the mouse over the text below to open the dropdown content.</p>
+
+      <div class="dropdown">
+        <span>Mouse over me</span>
+        <div class="dropdown-content">
+          <p>Hello World!</p>
+        </div>
+      </div>
+    </div>
+    <h1 class="para1">Text-shadow effect!</h1>
+    <p>Hover over the two divs below, to see the entire text.</p>
+    <div class="test" style="text-overflow: ellipsis">
+      This is some long text that will not fit in the box
+    </div>
+    <br />
+    <div class="test" style="text-overflow: clip">
+      This is some long text that will not fit in the box
+    </div>
+    <h2>Bordered Button Group</h2>
+
+    <p>Add borders to create a bordered button group:</p>
+
+    <div class="btn-group">
+      <button class="button">Button</button>
+      <button class="button">Button</button>
+    </div>
+
+    <p style="clear: both">
+      <br />Remember to clear floats after, or else will this p element also
+      float next to the buttons.
+    </p>
+    <h2>Animated Button - "Pressed Effect"</h2>
+
+    <button class="button">Click Me</button>
+
+    <h1>The transition Property</h1>
+
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div class="box"></div>
+    <h1>The transition Property</h1>
+
+    <p>Hover over the div element below, to see the transition effect:</p>
+
+    <div class="box2"></div>
+  </body>
+</html>
